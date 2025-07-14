@@ -1,18 +1,9 @@
 package com.example.demo.controller;
 
 
-
-
-
-
 import org.springframework.stereotype.Controller;
-
-
 import org.springframework.web.bind.annotation.GetMapping;
-
 import org.springframework.web.bind.annotation.PostMapping;
-
-
 
 @Controller
 public class CController {
@@ -23,18 +14,6 @@ public class CController {
     public String home() {
         // Show login page
         return "pages/Login"; // Login.jsp under /webapp/pages/ or wherever your prefix points
-    }
-
-    @PostMapping("/index")
-    public String showIndex() {
-        // After login redirect to index page (dashboard or student list)
-        return "pages/index"; // index.jsp
-    }
-
-    @GetMapping("/addStudentForm")
-    public String showAddStudentForm() {
-        // Show the form for adding a new student
-        return "pages/index"; // addStudent.jsp (create this JSP)
     }
 
 }
