@@ -22,19 +22,19 @@ public class CController {
     @GetMapping("/")
     public String home() {
         // Show login page
-        return "pages/Login"; // Login.jsp under /webapp/pages/ or wherever your prefix points
+        return "Login"; // Login.jsp under /webapp/pages/ or wherever your prefix points
     }
 
     @PostMapping("/index")
     public String showIndex() {
         // After login redirect to index page (dashboard or student list)
-        return "pages/index"; // index.jsp
+        return "index"; // index.jsp
     }
 
     @GetMapping("/addStudentForm")
     public String showAddStudentForm() {
         // Show the form for adding a new student
-        return "pages/index"; // addStudent.jsp (create this JSP)
+        return "index"; // addStudent.jsp (create this JSP)
     }
 
 }
